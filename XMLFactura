@@ -1,0 +1,89 @@
+Nombre comeraial
+
+Dirección
+
+Nombre juidico
+
+Fecha y hora
+
+Importe total
+
+No de tarjeta
+ Identificador de aplicacion
+
+Identificader de comercio 
+Codigo de Autorización 
+Identificador de la maquina
+
+Códiso de transacción
+
+Codigo de respuesta
+
+Datos tecnicos BMV
+
+CIF
+
+Mesa
+
+No de factura
+
+IVA
+
+Tipo de IVA
+
+Desslose de IVA
+
+Base imponible 
+importe de IVA 
+lineas de Factura
+
+cantidades
+Precio
+precio
+suma (total)
+
+<comercios>
+<comercio>
+<nombrecomercial>
+</nombrecomercial>
+<direccion>
+</direccion>
+<nombrejuridico>
+</nombrejuridico>
+<facturas>
+<factura>
+<fecha></fecha>
+<importetotal></importetotal>
+<ntarjeta>
+</ntarjeta>
+<idaplicacion>
+</idaplicacion>
+//idcomercio
+<codautorizacion>
+</codautorizacion>
+<idmaquina></idmaquina>
+<codtransaccion></codtransaccion>
+<codrespuesta></codrespuesta>
+<bmv></bmv>
+<cif></cif>
+<numfactura></numfactura>
+<productos>
+<producto>
+<cantidad>
+</cantidad>
+<preciobase>
+</preciobase>
+</producto>
+</productos>
+<iva>
+<base>
+</base>
+<tipo>
+</tipo>
+<importetotal>
+</importetotal>
+</iva>
+</factura>
+</facturas>
+</comercio>
+</comercios>
