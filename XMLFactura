@@ -1,3 +1,5 @@
+<!--
+
 Nombre comeraial
 
 Dirección
@@ -41,49 +43,73 @@ cantidades
 Precio
 precio
 suma (total)
+-->
+
 
 <comercios>
-<comercio>
-<nombrecomercial>
-</nombrecomercial>
-<direccion>
-</direccion>
-<nombrejuridico>
-</nombrejuridico>
-<facturas>
-<factura>
-<fecha></fecha>
-<importetotal></importetotal>
-<ntarjeta>
-</ntarjeta>
-<idaplicacion>
-</idaplicacion>
-//idcomercio
-<codautorizacion>
-</codautorizacion>
-<idmaquina></idmaquina>
-<codtransaccion></codtransaccion>
-<codrespuesta></codrespuesta>
-<bmv></bmv>
-<cif></cif>
-<numfactura></numfactura>
-<productos>
-<producto>
-<cantidad>
-</cantidad>
-<preciobase>
-</preciobase>
-</producto>
-</productos>
-<iva>
-<base>
-</base>
-<tipo>
-</tipo>
-<importetotal>
-</importetotal>
-</iva>
-</factura>
-</facturas>
-</comercio>
+    <comercio>
+        <nombrecomercial> </nombrecomercial>
+        <direccion> </direccion>
+        <cif> </cif>
+        <nombrejuridico> </nombrejuridico>
+        <facturas>
+            <factura>
+                <fecha></fecha>
+                <importetotal></importetotal>
+                <ntarjeta> </ntarjeta>
+                <idaplicacion> </idaplicacion>
+                <idcomercio> </idcomercio>
+                <codautorizacion>  </codautorizacion>
+                <idmaquina> </idmaquina>
+                <codtransaccion> </codtransaccion>
+                <codrespuesta> </codrespuesta>
+                <bmv> </bmv>
+                <numfactura> </numfactura>
+                <productos>
+                    <producto>
+                        <cantidad> </cantidad>
+                        <preciobase> </preciobase>
+                        <iva>
+                            <base> </base>
+                            <tipo> </tipo>
+                            <importetotal> </importetotal>
+                        </iva>
+                    </producto>
+                </productos>
+            </factura>
+        </facturas>
+    </comercio>
+</comercios>
+
+
+
+<!-- Con atributos-->
+ 
+<comercios>
+    <comercio nombrecomercial="" nombrejuridico="" cif="" idcomercio="">
+        <direccion> </direccion>
+        <facturas>
+            <factura numfactura="">
+                <fecha></fecha>
+                <importetotal></importetotal>
+                <ntarjeta> </ntarjeta>
+                <idaplicacion> </idaplicacion>
+                <codautorizacion>  </codautorizacion>
+                <idmaquina> </idmaquina>
+                <codtransaccion> </codtransaccion>
+                <codrespuesta> </codrespuesta>
+                <bmv> </bmv>
+                <productos>
+                    <producto>
+                        <cantidad> </cantidad>
+                        <preciobase> </preciobase>
+                        <iva tipo="">
+                            <base> </base>
+                            <importetotal> </importetotal>
+                        </iva>
+                    </producto>
+                </productos>
+            </factura>
+        </facturas>
+    </comercio>
 </comercios>
