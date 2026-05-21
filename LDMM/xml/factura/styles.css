@@ -1,0 +1,72 @@
+:root{
+    --color-primario: #a4acff;
+    --color-texto:#000000;
+
+    --color-fondo-principal:hsl(0, 0%, 69%);
+    --color-fondo-principal:#dadada;
+
+    --fuente-primaria:'Arial', sans-serif;
+    --fuente-secundaria:'Times New Roman', serif;
+    --fuente-secundaria:'Courier New', monospace;
+
+    --font-size-base:12px;
+
+    --border-box-radius:4px;
+    --margin-bottom-section:20px;
+
+    --border-style: 1px solid black;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: var(--fuente-primaria);
+    background-color: var(--color-fondo-principal);
+    padding:20px;
+    color: var(--color-texto);
+}
+
+header{
+    display:grid;
+    grid-template-columns: 3fr 2fr;
+    margin-bottom:var(--margin-bottom-section);
+}
+section{
+    margin-bottom:var(--margin-bottom-section);
+}
+
+div#logo img{
+    max-width:128px;
+}
+
+section#datos-cliente{
+    border: var(--border-style);
+}
+
+table#lineas-factura{
+
+    border:var(--border-style);
+    width:100%;
+
+    margin-top:0.5rem;
+    margin-bottom:0.5rem;
+    border-collapse:collapse;
+}
+
+table#lineas-factura, thead, tbody, th, td{
+    border:var(--border-style);
+    padding:1rem;
+}
+
+th{
+    text-transform: uppercase;
+}
+
+tbody{
+    border-width: 3px; 
+}
+

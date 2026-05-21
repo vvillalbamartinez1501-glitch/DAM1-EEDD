@@ -1,0 +1,47 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="factura.xsl"?> 
+
+
+<factura>
+    <comercio>
+        <nombre_comercial></nombre_comercial>
+        <direccion></direccion>
+        <nombre_juridico></nombre_juridico>
+        <cif></cif>
+        <mesa></mesa>
+    </comercio>
+
+    <transaccion_pago>
+        <fecha_hora></fecha_hora>
+        <importe_total></importe_total>
+        <numero_tarjeta></numero_tarjeta>
+        <identificador_aplicacion></identificador_aplicacion>
+        <identificador_comercio></identificador_comercio>
+        <codigo_autorizacion></codigo_autorizacion>
+        <identificador_maquina></identificador_maquina>
+        <codigo_transaccion></codigo_transaccion>
+        <codigo_respuesta></codigo_respuesta>
+        <datos_tecnicos_bmw></datos_tecnicos_bmw> 
+    </transaccion_pago>
+    
+    <datos_factura>
+        <numero_factura></numero_factura>
+        <base_imponible></base_imponible>
+        
+        <iva_detalles>
+            <iva></iva>
+            <tipo_iva></tipo_iva>
+            <desglose_iva></desglose_iva>
+            <importe_iva></importe_iva>
+        </iva_detalles>
+        
+        <lineas_factura>
+            <linea>
+                <cantidad></cantidad>
+                <descripcion></descripcion>
+                <precio></precio>
+                <suma></suma>
+            </linea>
+        </lineas_factura>
+    </datos_factura>
+</factura>

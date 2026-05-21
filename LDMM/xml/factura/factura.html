@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <section id="datos-comercio">
+            <p class="dato-comercio"> <span class="negrita"> Nombre: </span> </p> 
+            <p class="dato-comercio"><span class="negrita"> NIF: </span></p>
+            <p class="dato-comercio"><span class="negrita"> Dirección: </span></p>            
+        </section>
+        
+        <div id="logo"><img src="assets/img/logo.png" alt="Logo"></div>
+
+        <h1 id="tipo-documento">FACTURA</h1>
+
+        <section id="contabilidad">
+            <p id="fecha" class="dato-contabilidad"> <span class="negrita"> Fecha: </span> </p> 
+            <p id="numero"  class="dato-contabilidad"> <span class="negrita"> Nº factura: </span> </p> 
+        </section>
+    </header>
+    <main>
+        <section id="datos-cliente">
+            <p class="dato-cliente"> <span class="negrita"> Cliente: </span> </p> 
+            <p class="dato-cliente"><span class="negrita"> Domicilio: </span></p>
+            <p class="dato-cliente"><span class="negrita"> CIF/NIF: </span></p>   
+        </section>
+
+
+
+    <section id="tabla-factura">
+        <table id="lineas-factura">
+            <thead>
+                <tr>
+                    <th>Concepto</th>
+                    <th>Cantidad</th>
+                    <th>Base</th>
+                    <th>Tipo IVA</th>
+                    <th>Importe</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Coca Cola</td>
+                    <td>1</td>
+                    <td>2,33</td>
+                    <td>A</td>
+                    <td>3,33</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Forma de pago:</td>
+                    <td>Subtotal</td>
+                    <td>0,00€</td>
+                </tr>
+                <tr>
+                    <td colspan="3" rowspan="2">Transferencia:</td>
+                    <td>IVA ():</td>
+                    <td>0,00 €</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>0,00€</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    
+    </main>
+
+    <footer>
+        <p class="datos-comercio"><span class="negrita">Organización</span></p>
+    </footer>
+</body>
+</html>

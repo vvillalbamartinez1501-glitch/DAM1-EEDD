@@ -63,7 +63,7 @@ suma (total)
                 <idmaquina> </idmaquina>
                 <codtransaccion> </codtransaccion>
                 <codrespuesta> </codrespuesta>
-                <bmv> </bmv>
+                <tpv> </tpv>
                 <numfactura> </numfactura>
                 <productos>
                     <producto>
@@ -98,7 +98,7 @@ suma (total)
                 <idmaquina> </idmaquina>
                 <codtransaccion> </codtransaccion>
                 <codrespuesta> </codrespuesta>
-                <bmv> </bmv>
+                <tpv> </tpv>
                 <productos>
                     <producto>
                         <cantidad> </cantidad>
