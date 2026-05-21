@@ -90,7 +90,7 @@ suma (total)
         <direccion> </direccion>
         <facturas>
             <factura numfactura="">
-                <fecha></fecha>
+                <fecha>  </fecha>
                 <importetotal></importetotal>
                 <ntarjeta> </ntarjeta>
                 <idaplicacion> </idaplicacion>
