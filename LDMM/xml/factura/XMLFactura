@@ -84,7 +84,7 @@ suma (total)
 
 
 <!-- Con atributos-->
- 
+
 <comercios>
     <comercio nombrecomercial="" nombrejuridico="" cif="" idcomercio="">
         <direccion> </direccion>
