@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="tablaempleados.xsl"?> 
+
+<!-- <?xml-stylesheet type="text/xsl" href="empresa.xsl"?> -->
+
+<empresa nombre="TechSolutions S.A.">
+
+    <cpd>
+        <sala_servidores departamento="D001">
+            <servidor id="SRV-DEV-01">
+                <hostname>dev-app-01</hostname>
+                <ip>10.0.0.11</ip>
+                <usuario>admin_dev</usuario>
+                <servicios>
+                    <servicio nombre="API Backend" puerto="8080"/>
+                    <servicio nombre="Base de datos" puerto="5432"/>
+                </servicios>
+            </servidor>
+        </sala_servidores>
+
+        <sala_servidores departamento="D002">
+            <servidor id="SRV-RRHH-01">
+                <hostname>rrhh-data-01</hostname>
+                <ip>10.0.1.10</ip>
+                <usuario>admin_rrhh</usuario>
+                <servicios>
+                    <servicio nombre="Gestor Nóminas" puerto="9090"/>
+                </servicios>
+            </servidor>
+        </sala_servidores>
+
+        <sala_servidores departamento="D003">
+            <servidor id="SRV-MKT-01">
+                <hostname>mkt-analytics-01</hostname>
+                <ip>10.0.2.15</ip>
+                <usuario>admin_mkt</usuario>
+                <servicios>
+                    <servicio nombre="Dashboard Marketing" puerto="7070"/>
+                    <servicio nombre="Servicio Estadístico" puerto="6060"/>
+                </servicios>
+            </servidor>
+        </sala_servidores>
+
+        <sala_servidores departamento="D004">
+            <servidor id="SRV-IT-01">
+                <hostname>it-core-01</hostname>
+                <ip>10.0.3.20</ip>
+                <usuario>admin_it</usuario>
+                <servicios>
+                    <servicio nombre="Active Directory" puerto="389"/>
+                    <servicio nombre="DNS Interno" puerto="53"/>
+                    <servicio nombre="Proxy" puerto="3128"/>
+                </servicios>
+            </servidor>
+        </sala_servidores>
+    </cpd>
+
+    <departamentos>
+
+        <!-- DESARROLLO -->
+        <departamento id="D001" nombre="Desarrollo">
+            <empleados>
+                <empleado id="E001">
+                    <nombre>Ana García</nombre>
+                    <puesto>Desarrolladora Senior</puesto>
+                    <email>ana.garcia@techsolutions.com</email>
+                </empleado>
+                <empleado id="E002">
+                    <nombre>Javier López</nombre>
+                    <puesto>Desarrollador Junior</puesto>
+                    <email>javier.lopez@techsolutions.com</email>
+                </empleado>
+                <empleado id="E003">
+                    <nombre>Marcos Díaz</nombre>
+                    <puesto>Arquitecto Software</puesto>
+                    <email>marcos.diaz@techsolutions.com</email>
+                </empleado>
+            </empleados>
+
+            <recursos_informaticos>
+                <impresoras>
+                    <impresora id="IMP01">
+                        <modelo>HP LaserJet 5000</modelo>
+                        <ubicacion>Planta 1</ubicacion>
+                    </impresora>
+                </impresoras>
+
+                <puestos_trabajo>
+                    <puesto id="PT01">
+                        <equipo>PC-DEV-01</equipo>
+                        <sistema_operativo>Windows 11</sistema_operativo>
+                        <ip>192.168.10.21</ip>
+                    </puesto>
+                    <puesto id="PT02">
+                        <equipo>PC-DEV-02</equipo>
+                        <sistema_operativo>Ubuntu 22.04</sistema_operativo>
+                        <ip>192.168.10.22</ip>
+                    </puesto>
+                    <puesto id="PT03">
+                        <equipo>PC-DEV-03</equipo>
+                        <sistema_operativo>Windows 11</sistema_operativo>
+                        <ip>192.168.10.23</ip>
+                    </puesto>
+                </puestos_trabajo>
+            </recursos_informaticos>
+        </departamento>
+
+        <!-- RECURSOS HUMANOS -->
+        <departamento id="D002" nombre="Recursos Humanos">
+            <empleados>
+                <empleado id="E010">
+                    <nombre>Laura Martínez</nombre>
+                    <puesto>Responsable de RRHH</puesto>
+                    <email>laura.martinez@techsolutions.com</email>
+                </empleado>
+                <empleado id="E011">
+                    <nombre>Pedro Sánchez</nombre>
+                    <puesto>Técnico de Selección</puesto>
+                    <email>pedro.sanchez@techsolutions.com</email>
+                </empleado>
+            </empleados>
+
+            <recursos_informaticos>
+                <impresoras>
+                    <impresora id="IMP10">
+                        <modelo>Canon OfficeJet 3000</modelo>
+                        <ubicacion>Planta 2</ubicacion>
+                    </impresora>
+                </impresoras>
+
+                <puestos_trabajo>
+                    <puesto id="PT10">
+                        <equipo>PC-RRHH-01</equipo>
+                        <sistema_operativo>Windows 10</sistema_operativo>
+                        <ip>192.168.20.10</ip>
+                    </puesto>
+                    <puesto id="PT11">
+                        <equipo>PC-RRHH-02</equipo>
+                        <sistema_operativo>Windows 10</sistema_operativo>
+                        <ip>192.168.20.11</ip>
+                    </puesto>
+                </puestos_trabajo>
+            </recursos_informaticos>
+        </departamento>
+
+        <!-- MARKETING -->
+        <departamento id="D003" nombre="Marketing">
+            <empleados>
+                <empleado id="E020">
+                    <nombre>Sara Ruiz</nombre>
+                    <puesto>Analista de Datos</puesto>
+                    <email>sara.ruiz@techsolutions.com</email>
+                </empleado>
+                <empleado id="E021">
+                    <nombre>Daniel Torres</nombre>
+                    <puesto>Diseñador Gráfico</puesto>
+                    <email>daniel.torres@techsolutions.com</email>
+                </empleado>
+            </empleados>
+
+            <recursos_informaticos>
+                <impresoras>
+                    <impresora id="IMP20">
+                        <modelo>Epson ColorJet 900</modelo>
+                        <ubicacion>Planta 3</ubicacion>
+                    </impresora>
+                </impresoras>
+
+                <puestos_trabajo>
+                    <puesto id="PT20">
+                        <equipo>PC-MKT-01</equipo>
+                        <sistema_operativo>macOS Ventura</sistema_operativo>
+                        <ip>192.168.30.20</ip>
+                    </puesto>
+                    <puesto id="PT21">
+                        <equipo>PC-MKT-02</equipo>
+                        <sistema_operativo>Windows 11</sistema_operativo>
+                        <ip>192.168.30.21</ip>
+                    </puesto>
+                </puestos_trabajo>
+            </recursos_informaticos>
+        </departamento>
+
+        <!-- IT / SISTEMAS -->
+        <departamento id="D004" nombre="IT y Sistemas">
+            <empleados>
+                <empleado id="E030">
+                    <nombre>Héctor Navarro</nombre>
+                    <puesto>Administrador de Sistemas</puesto>
+                    <email>hector.navarro@techsolutions.com</email>
+                </empleado>
+                <empleado id="E031">
+                    <nombre>Lucía Fernández</nombre>
+                    <puesto>Técnica de Soporte</puesto>
+                    <email>lucia.fernandez@techsolutions.com</email>
+                </empleado>
+                <empleado id="E032">
+                    <nombre>Óscar Romero</nombre>
+                    <puesto>Ingeniero de Redes</puesto>
+                    <email>oscar.romero@techsolutions.com</email>
+                </empleado>
+            </empleados>
+
+            <recursos_informaticos>
+                <impresoras>
+                    <impresora id="IMP30">
+                        <modelo>Brother TechPro 4500</modelo>
+                        <ubicacion>Sala IT</ubicacion>
+                    </impresora>
+                </impresoras>
+
+                <puestos_trabajo>
+                    <puesto id="PT30">
+                        <equipo>PC-IT-01</equipo>
+                        <sistema_operativo>Windows 11</sistema_operativo>
+                        <ip>192.168.40.30</ip>
+                    </puesto>
+                    <puesto id="PT31">
+                        <equipo>PC-IT-02</equipo>
+                        <sistema_operativo>Ubuntu 22.04</sistema_operativo>
+                        <ip>192.168.40.31</ip>
+                    </puesto>
+                    <puesto id="PT32">
+                        <equipo>PC-IT-03</equipo>
+                        <sistema_operativo>Windows 10</sistema_operativo>
+                        <ip>192.168.40.32</ip>
+                    </puesto>
+                </puestos_trabajo>
+            </recursos_informaticos>
+        </departamento>
+
+    </departamentos>
+
+</empresa>
