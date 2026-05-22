@@ -26,7 +26,7 @@ dicc = {'a': 0, 'e': 1, 'i': 2, 'o': 3, 'u': 4}
 
 valor_max = dicc[max(dicc.keys())]
 
-cadena = input().lower()
+cadena = input("Introduzca una cadena: ").lower()
 cifrado = "".join([str(dicc.get(letra, letra)) for letra in cadena])
 print(cifrado)
 
