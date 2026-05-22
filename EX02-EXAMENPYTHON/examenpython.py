@@ -20,7 +20,13 @@ L1.append(L0[3][::-1] + L0[2][::-1])
 2.3.    Solicite al usuario la introducción de una cadena y muestre el resultado de su cifrado. La cadena resultante siempre estará en minúsculas.
         Ejemplo: Si el usuario introduce "Hola", la cadena resultante será "h3l0" (1 Pto.)
 """
+dicc = {'a': 0, 'e': 1, 'i': 2, 'o': 3, 'u': 4}
 
+valor_max = dicc[max(dicc.keys())]
+
+cadena = input().lower()
+cifrado = "".join([str(dicc.get(letra, letra)) for letra in cadena])
+print(cifrado)
 
 
 """
