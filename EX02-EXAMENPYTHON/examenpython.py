@@ -42,4 +42,21 @@ print(cifrado)
 	  Se obtendrá el valor 6
 """
 
+L2 = ['no soy una sublista de enteros', [2, 2, 'no soy un valor entero'], [2, 99.9999999999]]
+suma_total = 0
 
+for sublista in L2:
+    try:
+        if isinstance(sublista, str):
+            raise TypeError
+        for elemento in sublista:
+            try:
+                if type(elemento) is not int:
+                    raise ValueError
+                suma_total += elemento
+            except ValueError:
+                pass
+    except TypeError:
+        pass
+
+print(suma_total)
