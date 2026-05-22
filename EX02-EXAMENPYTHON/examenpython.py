@@ -7,6 +7,13 @@ No se considerará válida la obtención L1 de forma introduciendo sus elementos
 o directamente copiando y pegando la definición de L1 (2 Ptos.)
 """
 
+L0 = [[1, 2, 3], ['A', 'B', 'C'], "EED", "DAM"]
+L1 = []
+L1.append(L0[0] + L0[0][::-1])
+L1.append(["".join(L0[1]) + "".join(L0[1])[::-1]])
+L1.append(L0[2] + L0[3])
+L1.append(L0[3][::-1] + L0[2][::-1])
+
 """
 2.1.	Cree un diccionario dicc de forma que se asignen las claves ‘a’, ‘e’, ‘i’, ‘o’, ‘u’ a los valores 0, 1, 2, 3 y 4 ( 0,5 Ptos.)
 2.2.	Determinar el valor correspondiente a la clave más alta (orden alfabético) (0,5 Ptos.)
